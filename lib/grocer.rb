@@ -25,7 +25,7 @@ def consolidate_cart(cart)
   new_cart = []
   cart.map {|hash|
   new_cart << find_item_by_name_in_collection(hash[:item], cart]
-  binding.pry} 
+  binding.pry}
   
-  
+
 end
