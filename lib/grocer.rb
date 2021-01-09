@@ -37,9 +37,9 @@ def consolidate_cart(cart)
   cart.each {|hash|
     # binding.pry
     new_hash[hash[:item]] += 1}
-    binding.pry
   cart.uniq.map {|hash| hash[:count] = new_hash[hash[:item]]}
   cart
+  binding.pry
 
 
 end
