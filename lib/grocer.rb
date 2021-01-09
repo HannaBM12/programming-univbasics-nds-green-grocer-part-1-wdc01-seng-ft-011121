@@ -22,24 +22,12 @@ def consolidate_cart(cart)
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
-  # new_cart = []
-  # cart.map {|hash|
-  # new_cart << find_item_by_name_in_collection(hash[:item], cart)
-  # }
-  #
-  # new_cart.map {|list| }
-  # index = 0
-  # while index < new_cart.length do
-  #   count = ne
-  # end
 
-  new_hash = Hash.new(0)
+  new_hash = Hash.new
   cart.each {|hash|
     # binding.pry
     new_hash[hash[:item]] += 1}
   cart.uniq.map {|hash| hash[:count] = new_hash[hash[:item]]}
   cart
-  binding.pry
-
-
+  # binding.pry
 end
