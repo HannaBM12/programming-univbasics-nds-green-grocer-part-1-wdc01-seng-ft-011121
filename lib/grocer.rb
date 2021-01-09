@@ -26,7 +26,7 @@ def consolidate_cart(cart)
   # cart.map {|hash|
   # new_cart << find_item_by_name_in_collection(hash[:item], cart)
   # }
-  # 
+  #
   # new_cart.map {|list| }
   # index = 0
   # while index < new_cart.length do
@@ -35,7 +35,7 @@ def consolidate_cart(cart)
 
   new_hash = Hash.new(0)
   cart.each {|hash| new_hash[hash[:item]] += 1 binding.pyr}
-  cart.uniq.map {|hash| hash[:count] = new_hash[hash[:item]] 
+  cart.uniq.map {|hash| hash[:count] = new_hash[hash[:item]]
   binding.pry}
   cart
 
