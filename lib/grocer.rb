@@ -2,12 +2,12 @@ def find_item_by_name_in_collection(name, collection)
   # Implement me first!
   #
   # Consult README for inputs and outputs
-  collection.each {|list| 
+  collection.each {|list|
     if list[:item] == name
       return list
     end
   }
-  
+
   # index = 0ß
   # while index < collection.length do
   #   if collection[index][:item] == name
