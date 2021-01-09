@@ -24,8 +24,8 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   new_cart = []
   cart.map {|hash|
-  new_cart << find_item_by_name_in_collection(hash[:item], cart]
+  new_cart << find_item_by_name_in_collection(hash[:item], cart)
   binding.pry}
-  
+
 
 end
